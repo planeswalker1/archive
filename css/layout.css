@@ -3,3 +3,98 @@
   max-width: 1360px;
   margin: 0 auto;
 }
+
+.container--home {
+  display: flex;
+}
+
+.container--blog {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* post styles */
+.post-list {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.post > div {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  /* container styles */
+  .container--home,
+  .container--blog {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* post styles */
+  .post {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .post__content h2,
+  .post__content p {
+    padding: 0;
+  }
+
+  .post-list {
+    order: 2;
+    width: 100%;
+  }
+
+  /* archive styles */
+  .archive {
+    order: 1;
+    width: 100%;
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* container styles */
+  .container--home {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container--blog {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container--blog p {
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* archive styles */
+  .archive {
+    padding: 10px;
+  }
+
+  .archive__list {
+    margin: 0;
+  }
+}

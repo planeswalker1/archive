@@ -8,7 +8,31 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  line-height: 1.4;
+  background-color: whitesmoke;
+  color: #222;
+}
+
+h1, h2 {
+  color: #000;
+}
+
+.post__content h2,
+.post__content p {
+  padding-left: 20px;
+}
+
+h2,
+p {
+  margin-top: 0;
+}
+
 img {
-  height: 200px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
